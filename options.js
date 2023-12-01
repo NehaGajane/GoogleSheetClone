@@ -50,13 +50,11 @@ function onChangeFontSize() {
 
 }
 
-
-
 function call() {
     if(!activeElement) {
     alert("Please select a cell to make changes");
     form.reset();
-return;
+    return;
     }
 
     let currentState = {
@@ -76,7 +74,7 @@ return;
 function applyCurrentState(styleObject) {
     activeElement.style.fontSize = `${styleObject.fontSize}px`;
     activeElement.style.fontfamily = styleObject.fontfamily;
-    activeElement.style.textColor = styleObject.textColor;
+    activeElement.style.color = styleObject.color;
     activeElement.style.textAlign = styleObject.textAlign;
     activeElement.style.backgroundColor = styleObject.backgroundColor;
 
