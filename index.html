@@ -10,10 +10,11 @@
 <body>
     <section class = "toolbar">
         <form class="options" onchange="call()" id = "form">
-            <select name="fontfamily" id = "fontfamily">
-                <option value="'Courier New', Courier, monospace" name = "fontfamily" class="value">Courire  New </option>
-                <option value="monospace" class="'Times New Roman', Times, serif" name = "fontfamily">Times New Roman</option>
-                <option value="sans-serif" class="Arial, Helvetica, sans-serif" name = "fontfamily">Arial</option>
+            <select id="fontfamily" name="fontfamily" class="input">
+                <option name="fontfamily" value="poppins-boldItalic">boldItalic</option>
+                <option value="poppins-extraBold">extraBold</option>
+                <option value="poppins-medium">medium</option>
+                <option value="poppins-thinItalic">thinItalic</option>
             </select>
 
             <input type="number" name="fontsize" min = "8" max="24" id = "fontsize" value  = "16" placeholder="Font Size">
@@ -63,11 +64,8 @@
                     format_color_fill
                 </label>
             </div>
-            <button type="button"><span class="material-symbols-outlined" onclick="exportData()">
+            <button class="export" type="button"><span class="material-symbols-outlined" onclick="exportData()">
                 cloud_upload
-                </span></button>
-            <button type="button" id = "import"><span class="material-symbols-outlined" onclick="importData()">
-                cloud_download
                 </span></button>
             </form>
 
