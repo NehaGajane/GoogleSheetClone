@@ -50,6 +50,7 @@ function onChangeFontSize() {
 
 }
 
+
 function call() {
     if(!activeElement) {
     alert("Please select a cell to make changes");
