@@ -121,8 +121,20 @@
     background-color: #ededed;
 }
 @font-face {
-    font-family: root-font;
-    src: url(./NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+    font-family: poppins-boldItalic;
+    src: url(./Fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: poppins-extraBold;
+    src: url(./Fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(./Fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppins-thinItalic;
+    src: url(./Fonts/Poppins-ThinItalic.ttf);
 }
 
 .hiden-input {
@@ -135,4 +147,9 @@
 
 .hiden-input:checked + label {
     background-color: #C4C7C5;
+}
+
+.export, .import {
+    background-color: transparent;
+    border: none;
 }
